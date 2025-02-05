@@ -668,9 +668,9 @@ p {
   }
 
   .beauty-image img {
-    width: 90%;
+    width: 95%;
     margin-bottom: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
 
   .beauty-text {
@@ -725,7 +725,7 @@ p {
     text-align: left;
   }
 
-  .bestsellers-card h3 {
+  .bestsellers-card p {
     text-align: right;
     font-weight: bold;
     font-family: "AFACAD", sans-serif;
