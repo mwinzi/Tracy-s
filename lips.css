@@ -609,7 +609,7 @@ p {
   .hero-content {
     max-width: 100%;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 150px;
   }
 
   .hero-image img {
@@ -666,7 +666,7 @@ p {
   
   .product-card p  {
     text-align: right;
-    margin-top: 20px;
+    margin-top: -25px;
   }
 
   /* Beauty Routine Section */
@@ -678,13 +678,13 @@ p {
   .beauty-image img {
     width: 100%;
     margin-bottom: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
 
   .beauty-text {
     text-align: center;
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
 
   /* Bestsellers Section */
@@ -696,6 +696,7 @@ p {
   .bestsellers-text {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .bestsellers-grid {
@@ -717,7 +718,7 @@ p {
   }
 
   .bestsellers-card h5{
-    text-align: center;
+    text-align: left;
   }
   
   .bestsellers-card h6 {
@@ -765,8 +766,13 @@ p {
     margin-top: 20px;
   }
 
-  .makeup-card h4, .makeup-card p {
-    text-align: center;
+  .makeup-card h4{
+    text-align: left;
+  }
+
+  .makeup-card p {
+    text-align: right;
+    margin-top: -25px;
   }
 
   /* Tabs */
