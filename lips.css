@@ -82,12 +82,12 @@ p {
 /* Back Arrow Styling */
 .back-arrow {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 35px;
+  left: 25px;
 }
 
 .back-arrow img {
-  width: 40px;
+  width: 22px;
   height: auto;
   transition: transform 0.2s ease, opacity 0.2s ease; /* Add hover effect */
 }
