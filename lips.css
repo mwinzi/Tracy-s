@@ -660,7 +660,7 @@ p {
   }
 
   .product-card h6  {
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
   }
   
@@ -727,6 +727,10 @@ p {
   
   .bestsellers-card h6 {
     text-align: left;
+  }
+
+  .bestsellers-card p {
+    text-align: right;
   }
 
   /* Services Section */
