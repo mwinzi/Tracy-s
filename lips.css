@@ -753,7 +753,9 @@ p {
   /* Lip Makeup Section */
   .lip-makeup .product-grid {
     grid-template-columns: repeat(1, 1fr); /* Single column for mobile */
-    align-items: center;
+    justify-items: center;
+    margin: 0 auto; /* Ensure the grid is centered within its container */
+    width: 100%; /* Ensure the grid takes full width */
   }
 
   .makeup-card {
