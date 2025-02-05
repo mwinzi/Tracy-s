@@ -603,6 +603,7 @@ p {
   .hero {
     flex-direction: column;
     height: auto;
+    margin-top: 40px;
     padding: 30px;
   }
 
@@ -708,13 +709,23 @@ p {
   }
 
   .services-images {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack the images vertically */
+    align-items: center; /* Center the images */
+    gap: 20px; /* Adjust the gap between the images */
   }
 
-  .large-image, .small-image {
-    width: 80%;
-    margin-bottom: 20px;
+  /* For Large Image */
+  .large-image {
+    width: 100%; /* Ensure the large image takes full width */
+    max-width: 350px; /* Limit the max width */
+  }
+
+  /* For Small Image */
+  .small-image {
+    width: 100%; /* Ensure the small image takes full width */
+    max-width: 250px; /* Limit the max width */
+    position: static; /* Remove the absolute positioning */
+    margin-top: 20px; /* Add some margin on top for spacing */
   }
 
   /* Lip Makeup Section */
