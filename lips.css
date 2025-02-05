@@ -603,13 +603,13 @@ p {
   .hero {
     flex-direction: column;
     height: auto;
-    margin-top: 40px;
     padding: 30px;
   }
 
   .hero-content {
     max-width: 100%;
     text-align: center;
+    margin-top: 50px;
   }
 
   .hero-image img {
@@ -625,6 +625,7 @@ p {
   .back-arrow {
     position: absolute;
     top: 15px;
+    width: 50%;
     left: 15px;
   }
 
@@ -653,8 +654,19 @@ p {
     margin-top: 20px;
   }
 
-  .product-card h4, .product-card h6, .product-card p {
+  .product-card h4 {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .product-card h6  {
     text-align: center;
+    margin-top: 20px;
+  }
+  
+  .product-card p  {
+    text-align: right;
+    margin-top: 20px;
   }
 
   /* Beauty Routine Section */
@@ -666,11 +678,13 @@ p {
   .beauty-image img {
     width: 100%;
     margin-bottom: 20px;
+    margin-left: 5px;
   }
 
   .beauty-text {
     text-align: center;
     margin-top: 20px;
+    margin-left: 5px;
   }
 
   /* Bestsellers Section */
@@ -698,8 +712,16 @@ p {
     margin-top: 20px;
   }
 
-  .bestsellers-card h4, .bestsellers-card h5, .bestsellers-card h6 {
+  .bestsellers-card h4{
+    text-align: left;
+  }
+
+  .bestsellers-card h5{
     text-align: center;
+  }
+  
+  .bestsellers-card h6 {
+    text-align: left;
   }
 
   /* Services Section */
