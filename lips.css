@@ -695,12 +695,7 @@ p {
 
   .bestsellers-text {
     text-align: center;
-    margin-top: 20px;
-  }
-
-  .bestsellers p {
-    text-align: center;
-    margin-top: 20px;
+    margin: 20px;
   }
 
   .bestsellers-grid {
@@ -727,10 +722,6 @@ p {
   
   .bestsellers-card h6 {
     text-align: left;
-  }
-
-  .bestsellers-card p {
-    text-align: right;
   }
 
   /* Services Section */
