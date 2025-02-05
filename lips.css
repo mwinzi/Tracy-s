@@ -232,7 +232,7 @@ p {
 }
 
 .beauty-image img {
-  width: 550px;
+  width: 800px;
   height: auto;
   border-radius: 10px;
   display: block;
@@ -355,22 +355,6 @@ p {
   text-align: left;
   color: #666;
   margin-left: 20px;
-}
-
-.bestsellers-card h3 {
-  text-align: right;
-  font-weight: bold;
-  font-family: "AFACAD", sans-serif;
-  margin-top: -25px;
-  margin-right: 20px;
-}
-
-.bestsellers-card p {
-  text-align: right;
-  font-weight: bold;
-  font-family: "AFACAD", sans-serif;
-  margin-top: -25px;
-  margin-right: 20px;
 }
 
 .bestsellers-card button {
@@ -684,7 +668,7 @@ p {
   }
 
   .beauty-image img {
-    width: 100%;
+    width: 90%;
     margin-bottom: 20px;
     margin-left: 5px;
   }
@@ -692,7 +676,8 @@ p {
   .beauty-text {
     text-align: center;
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   /* Bestsellers Section */
@@ -738,6 +723,14 @@ p {
   
   .bestsellers-card h6 {
     text-align: left;
+  }
+
+  .bestsellers-card h3 {
+    text-align: right;
+    font-weight: bold;
+    font-family: "AFACAD", sans-serif;
+    margin-top: -25px;
+    margin-right: 20px;
   }
 
   /* Services Section */
