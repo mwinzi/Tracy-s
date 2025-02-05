@@ -39,6 +39,13 @@ p {
   line-height: 1.5;
 }
 
+h7 {
+  font-size: 16px;
+  color: #1E1E1E;
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* Hero Section */
 .hero {
   display: flex;
@@ -678,13 +685,13 @@ p {
   .beauty-image img {
     width: 100%;
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   .beauty-text {
     text-align: center;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   /* Bestsellers Section */
@@ -698,8 +705,16 @@ p {
     margin-top: 20px;
   }
 
+  .bestsellers p {
+    text-align: center;
+    margin-top: 20px;
+  }
+
   .bestsellers-grid {
     grid-template-columns: 1fr; /* Single column for mobile */
+    justify-items: center;
+    margin: 0 auto; /* Ensure the grid is centered within its container */
+    width: 100%; /* Ensure the grid takes full width */
   }
 
   .bestsellers-card {
