@@ -39,13 +39,6 @@ p {
   line-height: 1.5;
 }
 
-h7 {
-  font-size: 16px;
-  color: #1E1E1E;
-  margin: 0;
-  line-height: 1.5;
-}
-
 /* Hero Section */
 .hero {
   display: flex;
@@ -362,6 +355,14 @@ h7 {
   text-align: left;
   color: #666;
   margin-left: 20px;
+}
+
+.bestsellers-card h3 {
+  text-align: right;
+  font-weight: bold;
+  font-family: "AFACAD", sans-serif;
+  margin-top: -25px;
+  margin-right: 20px;
 }
 
 .bestsellers-card p {
