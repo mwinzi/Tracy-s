@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #000; /* Matches the dark background */
+    color: #fff;
+  }
+  
+  .skin-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .model-image {
+    width: 50%;
+    object-fit: cover;
+    height: auto;
+  }
+  
+  .text-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .text-content h1 {
+    font-size: 3rem;
+    color: #d7b697; /* Gold-like color for text */
+    line-height: 1.2;
+    margin: 0;
+  }
+  
+  .text-content h1 span {
+    font-style: italic;
+  }
+  
+  .text-content p {
+    font-size: 1.2rem;
+    color: #d7b697;
+    margin: 1rem 0;
+  }
+  
+  .icon {
+    margin-top: 1rem;
+  }
+  
+  .icon img {
+    width: 50px;
+    height: auto;
+  }
+
+  .back-arrow {
+    position: absolute; /* Position it anywhere you want */
+    top: 20px; /* Adjust for your layout */
+    left: 20px; /* Adjust for your layout */
+  }
+  
+  .back-arrow img {
+    width: 40px; /* Adjust size */
+    height: auto;
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Add hover effect */
+  }
+  
+  .back-arrow img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    opacity: 0.8; /* Reduce opacity for hover effect */
+  }

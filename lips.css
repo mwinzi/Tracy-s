@@ -1,0 +1,598 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "AFACAD", sans-serif;
+  color: #1E1E1E;
+  background-color: #E2E2E2;
+}
+
+h1, h2, h3 {
+  font-family: "ENGRAVERSGOTHIC", sans-serif;
+  color: #FF0035;
+  margin: 0;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 16px;
+  color: #1E1E1E;
+  margin: 0;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 16px;
+  color: #1E1E1E;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh; /* Ensures it takes the full height of the viewport */
+  padding: 50px;
+  background-color: #E2E2E2;
+  box-sizing: border-box; /* Includes padding in the height calculation */
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  margin-bottom: 30px;
+}
+
+.hero-buttons button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #FF0035;
+  color: #FFF;
+  border-radius: 5px;
+}
+
+.hero-image img {
+  width: 850px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Back Button Styling */
+.back-button {
+  position: absolute; /* Position it at the top-left of the page */
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000; /* Make sure it's above other elements */
+}
+
+.back-icon {
+  width: 40px; /* Adjust the size of the back icon */
+  height: auto;
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.back-icon:hover {
+  transform: scale(1.1); /* Enlarge the icon on hover */
+}
+
+
+
+/* Highlight Section */
+.highlight-section {
+  text-align: center;
+  padding: 80px 15%;
+  background-color: #E2E2E2;
+}
+
+.highlight-section h2 {
+  font-size: 24px;
+  font-family: "ENGRAVERSGOTHIC", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.highlight-section p {
+  font-size: 16px;
+  color: #1E1E1E;
+  line-height: 1.6;
+}
+
+.highlight-section .brand {
+  color: #FF0035;
+  font-weight: bold;
+}
+
+
+/* New Arrivals */
+.new-arrivals {
+  text-align: left;
+  padding: 50px;
+  background-color: #E2E2E2;
+}
+
+.new-arrivals h2 {
+  font-size: 24px;
+  font-family: "ENGRAVERSGOTHIC", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.new-arrivals .product-grid {
+  display: grid;
+  width: 90%;
+  margin-left: 60px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.product-card {
+  width: 350px;
+  border: 1px solid #C0C0C0;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #E2E2E2;
+}
+
+.product-card img {
+  width: 60%;
+  height: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+}
+
+.product-card h4 {
+  text-align: left;
+  font-weight: bold;
+  font-family: "AFACAD", sans-serif;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+.product-card h6 {
+  text-align: left;
+  color: #666;
+  margin-left: 20px;
+}
+
+.product-card p {
+  text-align: right;
+  font-weight: bold;
+  font-family: "AFACAD", sans-serif;
+  margin-top: -25px;
+  margin-right: 20px;
+}
+
+.product-card button {
+  width: 120px;
+  font-size: 14px;
+  padding: 8px 15px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #E2E2E2;
+  color: #000;
+  border: 1px solid #C0C0C0;
+  border-radius: 35px;
+}
+
+.product-card button:last-of-type {
+  background-color: black;
+  color: white;
+}
+
+
+/* Beauty Routine Section */
+.beauty-routine {
+  padding: 50px 0;
+  background-color: #E2E2E2;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.beauty-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+.beauty-image {
+  flex: 1;
+}
+
+.beauty-image img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.beauty-text {
+  flex: 1;
+  text-align: left;
+}
+
+.beauty-text h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+.beauty-text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+
+/* Bestsellers Section */
+.bestsellers {
+  padding: 50px;
+  background-color: #E2E2E2;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.bestsellers h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.bestsellers-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1500px;
+  margin-top: 150px;
+  gap: 100px;
+}
+
+.bestsellers-text {
+  flex: 1;
+  text-align: left;
+  max-width: 800px;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+.bestsellers-text h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bestsellers-text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.bestsellers-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.bestsellers-card {
+  width: 350px;
+  border: 1px solid #C0C0C0;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #E2E2E2;
+}
+
+.bestsellers-card img {
+  width: 50%;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.bestsellers-card h4 {
+  text-align: left;
+  font-weight: bold;
+  font-family: "AFACAD", sans-serif;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.bestsellers-card h5 {
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+  color: #666;
+  margin-top: 50px;
+  font-family: "AFACAD", sans-serif;
+  margin-left: 20px;
+}
+
+.bestsellers-card h6 {
+  text-align: left;
+  color: #666;
+  margin-left: 20px;
+}
+
+.bestsellers-card p {
+  text-align: right;
+  font-weight: bold;
+  font-family: "AFACAD", sans-serif;
+  margin-top: -25px;
+  margin-right: 20px;
+}
+
+.bestsellers-card button {
+  width: 120px;
+  font-size: 14px;
+  padding: 8px 15px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #E2E2E2;
+  color: #000;
+  border: 1px solid #C0C0C0;
+  border-radius: 35px;
+}
+
+.bestsellers-card button:last-of-type {
+  background-color: black;
+  color: white;
+}
+
+.color-options {
+  display: flex;
+  justify-content: left;
+  gap: 8px;
+  margin: 10px 0;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+.see-colors {
+  font-size: 12px;
+  color: #666;
+}
+
+
+/* Services Section */
+.services {
+  padding: 80px 50px;
+  background-color: #E2E2E2;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.services h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+
+/* Services Content */
+.services-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 150px;
+  gap: 350px;
+}
+
+/* Left: Image Container */
+.services-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.large-image {
+  width: 350px;
+  border-radius: 20px;
+}
+
+.small-image {
+  width: 250px;
+  position: absolute;
+  right: -300px;
+  bottom: 80px;
+  border-radius: 15px;
+}
+
+/* Right: Text Content */
+.services-text {
+  text-align: left;
+  max-width: 500px;
+}
+
+.services-text h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.services-text p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.services-text a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+
+/* Lip Makeup Section */
+.lip-makeup {
+  padding: 50px;
+  background-color: #E2E2E2;
+  margin-bottom: 150px;
+}
+
+.lip-makeup h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.lip-makeup .product-grid {
+  display: grid;
+  width: 90%;
+  margin-left: 60px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  margin-bottom: 100px;
+}
+
+.tabs .tab {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: 1px solid #C0C0C0;
+  cursor: pointer;
+  background-color: #E2E2E2;
+  color: #C0C0C0;
+  border-radius: 10px;
+}
+
+.tabs .tab.active {
+  background-color: #E2E2E2;
+  color: #C0C0C0;
+  border: none;
+}
+
+
+
+.makeup-card {
+  width: 350px;
+  border: 1px solid #C0C0C0;
+  padding: 20px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #E2E2E2;
+}
+
+.makeup-card img {
+  width: 60%;
+  height: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+}
+
+.makeup-card h4 {
+  text-align: left;
+  font-weight: bold;
+  font-family: "AFACAD", sans-serif;
+  margin-top: 80px;
+  margin-left: 20px;
+}
+
+.makeup-card p {
+  text-align: right;
+  font-weight: bold;
+  font-family: "AFACAD", sans-serif;
+  margin-top: -20px;
+  margin-right: 20px;
+}
+
+.makeup-card h6 {
+  text-align: left;
+  color: #666;
+  margin-left: 20px;
+}
+
+.makeup-card button {
+  width: 120px;
+  font-size: 14px;
+  padding: 8px 15px;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #E2E2E2;
+  color: #000;
+  border: 1px solid #C0C0C0;
+  border-radius: 35px;
+}
+
+.makeup-card button:last-of-type {
+  background-color: black;
+  color: white;
+}
