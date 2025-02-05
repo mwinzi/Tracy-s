@@ -1,81 +1,136 @@
+/* General Body Styles */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif;
-    background-color: #000; /* Matches the dark background */
-    color: #fff;
-  }
-  
-  .skin-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    min-height: 100vh;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #000; /* Matches the dark background */
+  color: #fff;
+}
+
+/* Main Section Styles */
+.skin-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  padding: 1rem; /* Adding padding for small screens */
+}
+
+/* Content Container */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: column; /* Stack content vertically for small screens */
+  text-align: center;
+}
+
+.model-image {
+  width: 100%; /* Full width on mobile */
+  max-width: 650px; /* Maintain a maximum width for large screens */
+  object-fit: cover;
+  height: auto;
+}
+
+.text-content {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 1rem; /* Provide space from the top */
+}
+
+.text-content h1 {
+  font-size: 2rem; /* Adjusted size for mobile */
+  color: #d7b697; /* Gold-like color for text */
+  line-height: 1.2;
+  margin: 0;
+}
+
+.text-content h1 span {
+  font-style: italic;
+}
+
+.text-content p {
+  font-size: 1.2rem;
+  color: #d7b697;
+  margin: 1rem 0;
+}
+
+/* Icon Styling */
+.icon {
+  margin-top: 1rem;
+}
+
+.icon img {
+  width: 50px;
+  height: auto;
+}
+
+/* Back Arrow Styling */
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-arrow img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.2s ease, opacity 0.2s ease; /* Add hover effect */
+}
+
+.back-arrow img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+  opacity: 0.8; /* Reduce opacity for hover effect */
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
   .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  .model-image {
-    width: 50%;
-    object-fit: cover;
-    height: auto;
-  }
-  
-  .text-content {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex-direction: column; /* Stack the image and text vertically */
     text-align: center;
   }
-  
-  .text-content h1 {
-    font-size: 3rem;
-    color: #d7b697; /* Gold-like color for text */
-    line-height: 1.2;
-    margin: 0;
-  }
-  
-  .text-content h1 span {
-    font-style: italic;
-  }
-  
-  .text-content p {
-    font-size: 1.2rem;
-    color: #d7b697;
-    margin: 1rem 0;
-  }
-  
-  .icon {
-    margin-top: 1rem;
-  }
-  
-  .icon img {
-    width: 50px;
+
+  .model-image {
+    width: 100%; /* Image takes full width on small screens */
+    max-width: none;
     height: auto;
   }
 
+  .text-content h1 {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+
+  .text-content p {
+    font-size: 1rem; /* Smaller paragraph text */
+  }
+
   .back-arrow {
-    position: absolute; /* Position it anywhere you want */
-    top: 20px; /* Adjust for your layout */
-    left: 20px; /* Adjust for your layout */
+    top: 10px;
+    left: 10px;
   }
-  
+
   .back-arrow img {
-    width: 40px; /* Adjust size */
-    height: auto;
-    transition: transform 0.2s ease, opacity 0.2s ease; /* Add hover effect */
+    width: 35px; /* Slightly smaller back arrow on mobile */
   }
-  
-  .back-arrow img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-    opacity: 0.8; /* Reduce opacity for hover effect */
+}
+
+@media (max-width: 480px) {
+  .text-content h1 {
+    font-size: 1.5rem; /* Adjust further for very small screens */
   }
+
+  .text-content p {
+    font-size: 0.9rem; /* Make text even smaller for mobile */
+  }
+
+  .back-arrow img {
+    width: 30px; /* Smaller back arrow on extra small screens */
+  }
+}

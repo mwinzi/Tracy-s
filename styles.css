@@ -12,39 +12,6 @@ body {
   flex-direction: column;
 }
 
-/* Header Section */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #5e2f24;
-}
-
-.header .nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #5e2f24;
-  font-weight: 500;
-}
-
-.header .nav a:hover {
-  color: #c45c36;
-}
-
-.header .menu-icon {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
 /* Main Section */
 .main {
   display: flex;
@@ -55,31 +22,6 @@ body {
   position: relative;
   flex: 1;
   min-height: 100vh;
-}
-
-.vertical-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  left: 2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
-  color: #8a5c52;
-}
-
-.vertical-nav a {
-  margin-bottom: 1rem;
-  text-decoration: none;
-  color: inherit;
-}
-
-.vertical-nav a:hover {
-  color: #c45c36;
 }
 
 .hero {
@@ -149,90 +91,6 @@ body {
   border-radius: 8px;
 }
 
-/* Footer Section */
-.footer {
-  text-align: center;
-  padding: 1rem 0;
-  background-color: #5e2f24;
-  color: #fff;
-}
-
-.footer a {
-  margin: 0 0.5rem;
-  text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.footer a:hover {
-  color: #c45c36;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header .menu-icon {
-    display: block;
-  }
-
-  .header .nav {
-    display: none;
-  }
-
-  .main {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero {
-    max-width: 90%;
-    margin-bottom: 2rem;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-
-  .product-showcase {
-    justify-content: center;
-  }
-
-  .product-showcase .product-image {
-    width: 90%;
-  }
-
-  .vertical-nav {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .main {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-
-  .hero {
-    text-align: left;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-  }
-
-  .product-showcase .product-image {
-    width: 100%;
-  }
-}
-
 /* Shop by Category Section */
 .shop-by-category {
   text-align: center;
@@ -292,4 +150,109 @@ body {
   height: 2px;
   background-color: #c45c36;
   margin: 0.5rem auto 0;
+}
+
+/* Mobile-Friendly Design */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    max-width: 90%;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .product-showcase {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .product-showcase .product-image {
+    width: 80%;
+  }
+
+  .shop-by-category .categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 50px;
+  }
+
+  .shop-by-category .category {
+    max-width: 100%;
+    flex: none;
+  }
+
+  .shop-by-category .category img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .shop-by-category .category p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 40px;
+  }
+
+  .footer {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .hero {
+    text-align: left;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .product-showcase .product-image {
+    width: 100%;
+  }
+
+  .shop-by-category .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .shop-by-category .categories {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .shop-by-category .category {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .shop-by-category .category img {
+    width: 100px;
+    height: 100px;
+  }
 }
