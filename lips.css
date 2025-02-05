@@ -696,7 +696,11 @@ p {
   .bestsellers-text {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+  }
+
+  .bestsellers p {
+    text-align: center;
+    margin-top: 20px;
   }
 
   .bestsellers-grid {
@@ -754,6 +758,7 @@ p {
   /* Lip Makeup Section */
   .lip-makeup .product-grid {
     grid-template-columns: repeat(1, 1fr); /* Single column for mobile */
+    align-items: center;
   }
 
   .makeup-card {
